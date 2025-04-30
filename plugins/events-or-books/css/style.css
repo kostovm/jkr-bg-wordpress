@@ -1,0 +1,125 @@
+.hp-component {
+    background: linear-gradient(145deg, #290a48, #1c1c3a);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(168, 255, 206, 0.08), 0 0 6px rgba(255, 255, 255, 0.04);
+    max-width: 100%;
+    color: #EBD9FF;
+    font-family: 'Georgia', serif;
+}
+
+.hp-component h3 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 14px;
+    color: #A8FFCE;
+    text-shadow: 0 0 6px rgba(120, 255, 210, 0.4);
+}
+
+/* Scroll areas */
+.hp-scrollable,
+.hp-books {
+    max-height: 300px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+/* EVENTS */
+.event {
+    padding: 10px 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.event p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #D8B4F8;
+}
+
+.event a {
+    color: #a3ffe4;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.event a:hover {
+    text-decoration: underline;
+    text-shadow: 0 0 4px rgba(168, 255, 206, 0.5);
+}
+
+/* BOOK LIST */
+.hp-books {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-height: 250px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+/* BOOK CARD */
+.hp-book {
+    display: flex;
+    align-items: center;
+    background: rgba(36, 20, 63, 0.85);
+    border-radius: 10px;
+    padding: 12px;
+    box-shadow: 0 0 6px rgba(168, 255, 206, 0.06);
+    gap: 12px;
+    border-left: 4px solid #a8ffce;
+}
+
+/* Book Cover */
+.hp-book img {
+    width: 60px;
+    height: auto;
+    border-radius: 6px;
+    flex-shrink: 0;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.15);
+}
+
+/* Book Info */
+.hp-book-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 14px;
+    gap: 6px;
+}
+
+.hp-book-info p:first-child {
+    font-size: 18px;
+    font-weight: bold;
+    color: #EBD9FF;
+    margin-bottom: 6px;
+    text-shadow: 0 0 4px rgba(216, 180, 248, 0.3);
+}
+
+.hp-book-info p:nth-child(2) {
+    font-size: 14px;
+    color: #aaa;
+}
+
+.hp-book-info p:last-child {
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffe6e6;
+    background: linear-gradient(to right, #700040, #a00060);
+    padding: 4px 8px;
+    border-radius: 5px;
+    display: inline-block;
+    align-self: flex-start;
+    box-shadow: 0 0 6px rgba(255, 0, 95, 0.2);
+}
+
+/* NEW BOOK HIGHLIGHT */
+.new_book {
+    background: linear-gradient(to right, #3a0044, #4d0062);
+    border-left: 4px solid #ffcc00;
+    box-shadow: 0 0 8px rgba(255, 221, 100, 0.2);
+}
+
+.new_book .hp-book-info p:first-child {
+    color: #ffcc66;
+    font-weight: bold;
+}
